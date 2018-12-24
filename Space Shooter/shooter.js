@@ -349,6 +349,7 @@ function starting() {
     ship.x = 200;
     ship.y = 200;
     ctx = screen.context;
+    points = 0;
 	loadScore();
 }
 
