@@ -1,25 +1,46 @@
 html {
-background: #DDDDDD;
-background: linear-gradient(to bottom, #EEE 0%, #ABABAB 50%, #898989 100%);
+    background: #DDDDDD;
+    background: linear-gradient(to bottom, #EEE 0%, #ABABAB 50%, #898989 100%);
 }
 
-
-.hex {
-    float: left;
-    margin-right: -31px;
-    margin-bottom: -138px;
-}
-.hex-row {
-    clear: left;
-}
-.hex.even {
-    margin-top: 54px;
-}
-
-.hext {
-    font-size: 20px;
-    font-weight: 900;
+.name {
+    font-family: 'Verdana';
+    font-weight: 400;
+    font-size: 10vh;
     text-align: center;
+    margin: -10px;
+}
+
+/* grid styling */
+use {
+    fill: transparent;
+}
+.button a:hover {
+    fill: #E9781C;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* other styling */
+svg {
+    width: 100vh;
+    margin-top: -25vh;
+}
+.hexagons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -120px;
+    height: 100vh;
+    font-weight: 700;
+    font-family: 'Verdana';
+    font-size: 4px;
 }
 
 .footer {
@@ -27,6 +48,7 @@ background: linear-gradient(to bottom, #EEE 0%, #ABABAB 50%, #898989 100%);
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 112px;
     background-color: #121212;
     text-align: left;
 }
@@ -34,21 +56,25 @@ background: linear-gradient(to bottom, #EEE 0%, #ABABAB 50%, #898989 100%);
 .timeline {
     position: relative;
     display: block;
-    margin: 65px 7%;
+
 	height: 3px;
-    width: 90%;
-    top: -10px;
+    width: 100%;
+    top: 30px;
 	background: #E9781C;
 }
 
 li {
 	position: relative;
 	display: inline-block;
-    float: left;
-	width: 24%;
+    float: center;
+	width: 23%;
+    top: 10px;
+    left: 2%;
+    white-space: nowrap;
+    background-color: #121212;
 }
 
-li .section {
+ol .section {
     position: absolute;
     top: -60px;
     width: 900px;
@@ -59,10 +85,11 @@ li .section {
 
 li .description {
     color: #BBBBBB;
+    margin: 7px;
 }
 
 li .point {
-    top: -7px;
+    top: -16px;
     left: 30px;
 	width: 8px;
 	height: 8px;
@@ -73,7 +100,9 @@ li .point {
 }
 
 .timeline .date{
+    font-family: 'Arial';
 	font-size: 14px;
 	color: #666666;
 	font-weight: 300;
+    margin: 12px;
 }
